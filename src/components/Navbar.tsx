@@ -28,7 +28,7 @@ export const Navbar = () => {
                   className="w-8"
                 />
               </span>
-            <span>The Arise'20 Foundation</span>
+            <span>The Arise{'\''}20 Foundation</span>
           </span>
         </Link>
 

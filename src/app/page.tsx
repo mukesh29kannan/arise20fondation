@@ -26,7 +26,7 @@ export default function Home() {
         preTitle="Success Stories"
         title=""
       >
-        Read inspiring stories of women who have transformed their lives through our programs. From entrepreneurs launching successful businesses to community leaders driving social change, these stories showcase the power of women's empowerment.
+        Read inspiring stories of women who have transformed their lives through our programs. From entrepreneurs launching successful businesses to community leaders driving social change, these stories showcase the power of women{'\''}s empowerment.
       </SectionTitle>
 
       {/* <Video videoId="fZ0D0cnR88E" /> */}
