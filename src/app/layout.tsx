@@ -26,8 +26,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Navbar />
           <div style={{padding:"20px"}}>{children}</div>
-          <Footer />
-          <PopupWidget />
         </ThemeProvider>
       </body>
     </html>
