@@ -12,7 +12,7 @@ export const Hero = () => {
               Welcome to Arise{'\''}20 Foundation
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            The Arise'20 Foundation is a non profitable organisation established on September 19, 2022 in Salem, Tamil Nadu. The foundation is committed to uplifting social awareness through education, employment, healthcare, social welfare, and cultural empowerment especially gramiya kalaigal. It operates as a non-profit organization, ensuring transparency and accountability in all its initiatives.
+            The Arise{'\''}20 Foundation is a non profitable organisation established on September 19, 2022 in Salem, Tamil Nadu. The foundation is committed to uplifting social awareness through education, employment, healthcare, social welfare, and cultural empowerment especially gramiya kalaigal. It operates as a non-profit organization, ensuring transparency and accountability in all its initiatives.
             </p>
           </div>
         </div>
