@@ -4,8 +4,17 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const navigation:any = [
+    {label:"Our Initiatives",id:"our-initiatives"},
+    {label:"Get Involved",id:"our-invloved"},
+    {label:"Our Mission",id:"our-mission"},
+    {label:"Our Vision",id:"our-vision"},
+    {label:"Objectives & Activities",id:"activities"},
+  ];
+  const legal:any =[
+    {label:"Governance & Financial Management",id:"governance"},
+    {label:"Legal & Operational Framework",id:"legal"}
+  ];
   return (
     <div className="relative">
       <Container>
@@ -18,61 +27,43 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="N"
                   width="32"
                   height="32"
                   className="w-8"
                 />
-                <span>Nextly</span>
+                <span>The Arise{'\''}20 Foundation</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
-            </div>
-
-            <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
+              The Arise'20 Foundation is a dedicated non-profit organization committed to uplifting social awareness through education, employment, healthcare, and cultural promotion. By fostering social change, providing essential services, and maintaining transparency, the foundation aspires to create a brighter future for disadvantaged communities.
             </div>
           </div>
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
+              {navigation.map((item:any, index:any) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={`#${item.id}`}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </div>
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
+              {legal.map((item:any, index:any) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={`#${item.id}`}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </div>
@@ -80,7 +71,7 @@ export function Footer() {
           <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
+              {/* <a
                 href="https://twitter.com/web3templates"
                 target="_blank"
                 rel="noopener"
@@ -95,36 +86,29 @@ export function Footer() {
               >
                 <span className="sr-only">Facebook</span>
                 <Facebook />
-              </a>
+              </a> */}
               <a
-                href="https://instagram.com/web3templates"
+                href="https://www.instagram.com/the_arise20_foundation"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              {/* <a href="https://linkedin.com/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
+          Copyright © {new Date().getFullYear()}. Made with ♥ by The arise{"'"}s 20 foundation
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }

@@ -12,7 +12,7 @@ export const Hero = () => {
               Welcome to Arise{'\''}20 Foundation
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              A trust dedicated to empowering and developing women across the globe. Our mission is to create a world where every woman has the opportunity to reach her full potential and contribute meaningfully to society.
+            The Arise'20 Foundation is a non profitable organisation established on September 19, 2022 in Salem, Tamil Nadu. The foundation is committed to uplifting social awareness through education, employment, healthcare, social welfare, and cultural empowerment especially gramiya kalaigal. It operates as a non-profit organization, ensuring transparency and accountability in all its initiatives.
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ export const Hero = () => {
           </div>
         </div>
       </Container>
-      <Container>
+      {/* <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
             Trusted by <span className="text-indigo-600">2000+</span>{" "}
@@ -55,7 +55,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </Container> */}
     </>
   );
 }
