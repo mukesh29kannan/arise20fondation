@@ -6,6 +6,7 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+import Events from "@/components/Events";
 
 import { benefitOne, benefitThree, benefitTwo,governanceAndFinancialManagement,legalAndOperationalFramework } from "@/components/data";
 export default function Home() {
@@ -33,7 +34,12 @@ export default function Home() {
       <Testimonials />
       <Benefits data={governanceAndFinancialManagement} id="governance"/>
       <Benefits imgPos="right" data={legalAndOperationalFramework} id="legal" />
-
+      <SectionTitle
+        preTitle=""
+        title="Moments from Our Events"
+        id="moments"
+      ></SectionTitle>
+      <Events/>
       {/* <SectionTitle
         preTitle="Success Stories"
         title=""
