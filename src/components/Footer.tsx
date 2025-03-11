@@ -38,7 +38,7 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              The Arise'20 Foundation is a dedicated non-profit organization committed to uplifting social awareness through education, employment, healthcare, and cultural promotion. By fostering social change, providing essential services, and maintaining transparency, the foundation aspires to create a brighter future for disadvantaged communities.
+              The Arise{'\''}20 Foundation is a dedicated non-profit organization committed to uplifting social awareness through education, employment, healthcare, and cultural promotion. By fostering social change, providing essential services, and maintaining transparency, the foundation aspires to create a brighter future for disadvantaged communities.
             </div>
           </div>
 
@@ -104,7 +104,7 @@ export function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by The arise{"'"}s 20 foundation
+          Copyright © {new Date().getFullYear()}. Made with ♥ by The arise{'\''}s 20 foundation
         </div>
       </Container>
       {/* Do not remove this */}
