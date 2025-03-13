@@ -17,6 +17,10 @@ export default function Events(){
           {
             title: "Awards",
             src: "/img/award.jpeg",
+          },
+          {
+            title: "Team",
+            src: "/img/group.jpeg",
           }
     ]
     return <FocusCards cards={cards} />;

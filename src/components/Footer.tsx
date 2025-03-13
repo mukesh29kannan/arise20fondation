@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 export function Footer() {
   const navigation:any = [
@@ -95,6 +96,14 @@ export function Footer() {
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
+              <a 
+                href="mailto:thearise20foundation@gmail.com"
+                target="_blank"
+                rel="noopener"
+              >
+                <span className="sr-only">Mail</span>
+                <Envelope />
+              </a>
               {/* <a href="https://linkedin.com/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
@@ -160,6 +169,20 @@ const Linkedin = ({ size = 24 }) => (
   </svg>
 );
 
+const Envelope = ({ size = 24 }) => {
+  return (
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="currentColor"
+>
+  <path d="M12 13.5L2 7V6h20v1l-10 6.5zm0 2.1L21 9V7l-9 6.2L3 7v2l9 6.6z" />
+</svg>
+
+  )
+}
 const Backlink = () => {
   return (
     <a

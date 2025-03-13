@@ -149,7 +149,7 @@ const governanceAndFinancialManagement = {
 const legalAndOperationalFramework = {
   title: "Legal & Operational Framework",
   desc: "",
-  image: benefitOneImg,  // Add an image if needed
+  image: benefitTwoImg,  // Add an image if needed
   bullets: [
     {
       title: "Non-Profit Status",
