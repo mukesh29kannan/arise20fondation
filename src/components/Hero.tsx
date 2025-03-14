@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/logo.png";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 export const Hero = () => {
   return (
@@ -18,6 +19,7 @@ export const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
+        <BackgroundLines>
             <Image
               src={heroImg}
               width="616"
@@ -27,6 +29,7 @@ export const Hero = () => {
               loading="eager"
               placeholder="blur"
             />
+        </BackgroundLines>
           </div>
         </div>
       </Container>
